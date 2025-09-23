@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_notification">
+    <sys_notification action="INSERT_OR_UPDATE">
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <advanced_event_condition>false</advanced_event_condition>
+        <category display_value="Agent Intelligence" name="Agent Intelligence">cbc6836273e0230080b29ca9faf6a7ac</category>
+        <condition/>
+        <description/>
+        <event/>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_1_table>sys_user</event_parm_1_table>
+        <event_parm_2>false</event_parm_2>
+        <event_parm_2_table>sys_user</event_parm_2_table>
+        <include_originator>true</include_originator>
+        <mandatory>false</mandatory>
+        <name>test</name>
+        <notification_classifier/>
+        <order>100</order>
+        <recipient_fields/>
+        <recipient_users/>
+        <script><![CDATA[(function runRecipientScript(/*String*/ parm1, /*String*/ parm2) {
+      /*
+      //Create instance of AdvancedNotificationRecipients to add recipients
+      var nr = new sn_notification.AdvancedNotificationRecipients();
+      var sysIds = [];
+      var gr = new GlideRecord('sys_user');
+      gr.addQuery('first_name','IN',parm1);
+      gr.query();
+      while (gr.next()) {
+        sysIds.push(gr.getValue('sys_id'));
+      }
+      nr.addRecipientInfo('sys_user',sysIds);
+      return nr;*/
+      })(parm1,parm2);]]></script>
+        <sys_class_name>sys_notification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-23 12:48:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>882e2f9f8340b2105acaed70deaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_notification_882e2f9f8340b2105acaed70deaad310</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-23 12:48:15</sys_updated_on>
+        <table>incident</table>
+        <triggered_by>record_change</triggered_by>
+    </sys_notification>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>882e2f9f8340b2105acaed70deaad310</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-23 12:48:15</sys_created_on>
+        <sys_id>fa9faf138380b2105acaed70deaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-23 12:48:15</sys_updated_on>
+        <table>sys_notification</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
